@@ -44,36 +44,56 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Armory.cs" />
+    <Compile Include="AtmosphereProcessingUnit.cs" />
+    <Compile Include="CarrierBeamCrystal.cs" />
     <Compile Include="CentralComputerCore.cs" />
+    <Compile Include="CentralPowerColumn.cs" />
+    <Compile Include="ConcentricSurfaceDecks.cs" />
     <Compile Include="CoolingSystem.cs" />
+    <Compile Include="DeathStar.cs" />
     <Compile Include="Destination.cs" />
+    <Compile Include="EmergencyRadiationDischarge.cs" />
     <Compile Include="Exhaust.cs" />
     <Compile Include="ExteriorQuadaniumsteelouterhull.cs" />
+    <Compile Include="FiringFieldAmplifier.cs" />
     <Compile Include="FuelCollector.cs" />
     <Compile Include="FuelRod.cs" />
     <Compile Include="FuelRodLevel.cs" />
     <Compile Include="HangarBay.cs" />
     <Compile Include="HeatExchanger.cs" />
-    <Compile Include="HydrogenGenerator.cs" />
     <Compile Include="HyperDrive.cs" />
     <Compile Include="HyperMatterReactor.cs" />
     <Compile Include="IChangeTemperature.cs" />
+    <Compile Include="InductionHyperphaseGenerator.cs" />
     <Compile Include="IonDriveReactor.cs" />
+    <Compile Include="IonSublightEngines.cs" />
     <Compile Include="MagneticShielding.cs" />
     <Compile Include="Mainexhaustport.cs" />
     <Compile Include="MainPowerGenerator.cs" />
     <Compile Include="OffenseMode.cs" />
     <Compile Include="OverBridge.cs" />
     <Compile Include="PowerCell.cs" />
+    <Compile Include="PrimaryBeamFocusingMagnet.cs" />
+    <Compile Include="PrimaryPowerAmplifier.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Radiation.cs" />
     <Compile Include="Reactor.cs" />
     <Compile Include="ReactorCore.cs" />
     <Compile Include="Refinery.cs" />
+    <Compile Include="SecondaryPowerConverters.cs" />
+    <Compile Include="SectorComputerCluster.cs" />
+    <Compile Include="StellarFuelBottles.cs" />
     <Compile Include="SuperLaser.cs" />
+    <Compile Include="SuperLaserPowerCell.cs" />
+    <Compile Include="SuperlaserTributaryBeamShaft.cs" />
+    <Compile Include="TargetingFieldGenerator.cs" />
     <Compile Include="Thermalexhaustport.cs" />
     <Compile Include="TractorBeam.cs" />
+    <Compile Include="TractorBeamGenerator.cs" />
+    <Compile Include="TractorBeamGeneratorTower.cs" />
+    <Compile Include="TractorBeamReactorCoupling.cs" />
+    <Compile Include="WaterTanks.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

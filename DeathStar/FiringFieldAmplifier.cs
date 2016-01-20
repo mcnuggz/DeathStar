@@ -1,6 +1,6 @@
 ﻿namespace DeathStar
 {
-    public class TractorBeamGenerator
+    public class FiringFieldAmplifier
     {
     }
 }

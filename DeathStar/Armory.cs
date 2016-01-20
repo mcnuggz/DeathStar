@@ -8,27 +8,27 @@ namespace TopSecretPlans
 {
     public class Armory
     {
-        int numberOfWeapons;
-        int ammo;
-        string[] weapons;
-        string[] guns;
-        string[] laserShooter;
-        string[] grenadeLaunchers;
-        string[] bombThrower;
-        string[] ammoType;
-        string[] grenades;
-        string[] bombs;
-        string[] superLaser;
-        string[] bullets;
-        int weaponTotal;
-        int weaponStock;
-        int weaponTake;
-        int weaponOut;
-        int ammoTotal;
-        int ammoStock;
-        int ammoTake;
-        int ammoOut;
-        bool weaponAvailable;
+        public int numberOfWeapons;
+        public int ammo;
+        public string[] weapons;
+        public string[] guns;
+        public string[] laserShooter;
+        public string[] grenadeLaunchers;
+        public string[] bombThrower;
+        public string[] ammoType;
+        public string[] grenades;
+        public string[] bombs;
+        public string[] superLaser;
+        public string[] bullets;
+        public int weaponTotal;
+        public int weaponStock;
+        public int weaponTake;
+        public int weaponOut;
+        public int ammoTotal;
+        public int ammoStock;
+        public int ammoTake;
+        public int ammoOut;
+        public bool weaponAvailable;
 
         public Armory(int numberOfWeapons, int ammo)
         {
@@ -64,7 +64,6 @@ namespace TopSecretPlans
             Console.WriteLine("How many weapons do you want?");
             string numberWeapons = Console.ReadLine();
             int numberOfWeapons = int.Parse(numberWeapons);
-
         }
 
         public void TotalAmmo()

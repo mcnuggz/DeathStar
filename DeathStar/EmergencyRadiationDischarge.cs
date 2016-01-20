@@ -1,6 +1,6 @@
 ﻿namespace DeathStar
 {
-    internal class EmergencyRadiationDischarge
+    public class EmergencyRadiationDischarge
     {
     }
 }

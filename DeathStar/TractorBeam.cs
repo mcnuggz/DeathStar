@@ -19,16 +19,9 @@ namespace TopSecretPlans
                 return TractorBeamLevel;
             }
         }
-        public TractorBeam(int PowerRate, int TractorBeamLevel)
-            :base(PowerRate)
+        public TractorBeam(int PowerRate, int TractorBeamLevel) :base(PowerRate)
         {
             this.TractorBeamLevel = TractorBeamLevel;
-        }
-        public void Tractorbeamgeneratortower(int powerrate)
-            
-        {
-            TractorBeamLevel = powerrate;
-                       
         }
 
         public void GenerateTractorBeam()
@@ -36,10 +29,5 @@ namespace TopSecretPlans
             TractorBeamLevel++;
         }
 
-        public void CreateForce(int power, int direction)
-        {
-            Tractorbeamgeneratortower(power);
-            //Console.WriteLine($"Your tractor bean starts pulling with {power} at {direction} degrees");
-        }
     }
 }

@@ -21,7 +21,6 @@ namespace TopSecretPlans
         }
 
         public void FireLaser()
-      
         {
             laserPowerLevel -= 5;
             Console.WriteLine("Pew, pew, pew!");
@@ -35,16 +34,6 @@ namespace TopSecretPlans
         {
             laserPowerLevel = chargerPack;
             Console.WriteLine("The Super Laser is recharging");
-        }
-        public void TripleShot()
-        {
-            laserPowerLevel -= 15;
-            Console.WriteLine("PEW PEW PEW... PEW PEW PEW... PEW PEW PEW!!!");
-            if (laserPowerLevel <= 0)
-            {
-                Recharge();
-            }
-
         }
     }
 }
