@@ -53,7 +53,7 @@ namespace DeathStar
         Armory armory;
 
         #endregion
-        private string musicFile = @"AwfulNoise.wav";
+        private string musicFile = "AwfulNoise.wav";
         public void FloatOminously()
         {
             Console.WriteLine("Floatin' around in SPAAAAAAAAAAAACE");
