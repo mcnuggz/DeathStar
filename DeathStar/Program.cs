@@ -11,6 +11,12 @@ namespace DeathStar
     {
         static void Main(string[] args)
         {
+            DeathStar deathStar = new DeathStar();
+
+            deathStar.FloatOminously();
+            deathStar.PlayTheMusic();
+            deathStar.SendEmail("dzanfox@gmail.com");
+            Console.ReadLine();
         }
     }
 }

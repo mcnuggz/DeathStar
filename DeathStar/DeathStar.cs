@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Net;
 using System.Threading;
 using TopSecretPlans;
 using System.Media;
+using System.Net.Mail;
 
 namespace DeathStar
 {
@@ -51,7 +53,7 @@ namespace DeathStar
         Armory armory;
 
         #endregion
-
+        private string musicFile = @"AwfulNoise.wav";
         public void FloatOminously()
         {
             Console.WriteLine("Floatin' around in SPAAAAAAAAAAAACE");
@@ -66,8 +68,36 @@ namespace DeathStar
 
         public void PlayTheMusic()
         {
-            SoundPlayer player = new SoundPlayer(@"AwfulNoise.mp3");
+            SoundPlayer player = new SoundPlayer(musicFile);
+            Console.WriteLine("Playing");
             player.Play();
+        }
+        public void SendEmail(string emailAddress)
+        {
+            try
+            {
+                MailMessage mail = new MailMessage();
+                var client = new SmtpClient("smtp.gmail.com", 587)
+                {
+                    Credentials = new NetworkCredential("dzanfox@gmail.com", "theveldt13"),
+                    EnableSsl = true
+                };
+                mail.From = new MailAddress("dzanfox@gmail.com");
+                mail.To.Add(emailAddress);
+                mail.Subject = "Greetings from the DeathStar";
+                mail.Body = "SPAAAAAAAACE";
+
+                Attachment attachment;
+                attachment = new Attachment(@"space.jpg");
+                mail.Attachments.Add(attachment);
+
+                client.Send(mail);
+                Console.WriteLine("Sent");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
         }
     }
 }
